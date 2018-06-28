@@ -1,0 +1,43 @@
+--placeholderText:rgba(50,50,50,1);
+--textColor2:rgba(0,0,0,1);
+
+body{
+  font-family: 'Roboto Mono', monospace;
+}
+form{
+  display:inline-block;
+  text-align: center;
+  align-items: center;
+}
+form > input{
+  width:20px;
+  text-align: center;
+  align-items: center;
+}
+.item {
+  display: grid;
+  padding: 20px;
+  max-width:1200px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 120px);
+  grid-template-areas:
+  'form val1 val2';
+}
+.item > div{
+display:flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+border: 1px grey;
+background-color: rgba(200,200,200, 0.2);
+}
+
+.placeholder{
+  color: var(--placeholderText);
+}
+.changed{
+  color:var(--textColor2);
+  font-weight: bold;
+  background-color: rgba(150,150,150,1);
+}
