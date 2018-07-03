@@ -1,48 +1,229 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="desctiption" content="Oxygen Not Included calculator"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  </head>
-  <body>
+<head>
+	<meta charset="UTF-8"><!-- generator meta tag -->
+	<!-- leave this for stats and Silex version check -->
+	<meta content="Silex v2.2.7" name="generator"><!-- End of generator meta tag -->
 
-    <form>
-      <!-- Qty: <input type="text" name="qty" id="qty" placeholder="1">
-      <button type="button" name="button" onClick="calc()">calculate</button> -->
-      <!-- Value 1: <input type="text" name="val1" id="" placeholder="120">
-      Value 2: <input type="text" name="val2" id="" placeholder="300"> -->
-
-    </form>
-    <div class="item">
-      <div id="form">
-        <form>
-          Qty: <input type="text" name="qty" id="qty" placeholder="1">
-          <button type="button" name="button" onClick="calc()">calculate</button>
-        </form>
-      </div>
-
-      <div class="values" id="val1">
-        120
-      </div>
-      <div class="values" id="val2">
-        300
-      </div>
-    </div>
-    <div class="changed">
-      12341234
-    </div>
-    <div class="placeholder">
-      12341234
-    </div>
-
-  </body>
-  <footer>
-sdfg
-    <script src="js/javascript.js" charset="utf-8"></script>
-  </footer>
-
-
+	<script src="js/jquery.js" type="text/javascript">
+	</script>
+	<script src="js/jquery-ui.js" type="text/javascript">
+	</script>
+	<script src="js/pageable.js" type="text/javascript">
+	</script>
+	<script src="js/front-end.js" type="text/javascript">
+	</script>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/front-end.css" rel="stylesheet">
+	<title></title>
+	<meta content="1200" name="website-width">
+	<link class="silex-custom-font" href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css"><!-- Silex HEAD tag do not remove -->
+	<!-- End of Silex HEAD tag do not remove -->
+	<script src="js/script.js" type="text/javascript">
+	</script>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body-initial silex-runtime silex-published" data-silex-type="container" style="display: none;">
+	<div class="silex-pages">
+		<div class="editable-style silex-id-hamburger-menu image-element menu-button prevent-draggable prevent-resizable" data-silex-type="image"><img alt="open mobile menu" class="silex-element-content" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAB5UlEQVR42u2ZPWvCUBSGM+UfFO3e3dLu/QN+oKj4EUXRQREEJYgoiCAu6qCogyDo7iJ21UUaKqEgCC4iiEMGB3UVgsnpTWj/wfVK2nvhGbKEPJyT996TMMzPGg6H5mKx+GgkyuWyeTQasb8OTDwef4tEIp8+n+/LYIjJZJJHQiwzm81M6OLDarWqNpsNjEYgEJCy2ewT0+/3TagighElNFAnQT6ft1ARKkJFqMgfFvF4PFpuEwFtdrcRqVarIIoirFYrIiyXSxiPx+B2u/GJBINBuF6vQHopigK1Wg2fCMdxcLlciIuoqgqNRgOfiN1uB3Qwg91uB8fjkQiHwwEmkwne1qLxS0VuKKJle71eh06nQ4Rmswk8z+MVcTqdsNlsQJZlotF7Pp8hk8ngE4lGo/qN7xG/vV4Pb0Xm8zlxkdPpBGgMx/+yJxIJKBQKRMjlcuBwOGhq/Q+RcDgMsViMCFrAuFwu/CKDwQC22y1IkkSE/X4PgiDo+xc2Ea0S9zjGa/Hb7Xbxifj9fj0K7yFSqVTwtlY6nYbpdKpPiSRYLBbQarX0PYymFhWhIlSEilCRW6GdyUqlkoVZr9dsKpXiOY6TtW+7BkNBz/7ebrcf9L+6Xq+XRYPMMyrTq5EIhUIvaAjTJb4BBNQ2yhnth0wAAAAASUVORK5CYII="></div><a class="page-element" data-silex-type="page" id="page-home">Home</a><a class="page-element" data-silex-type="page" id="page-electricity">electricity</a><a class="page-element" data-silex-type="page" id="page-oxygen">oxygen</a>
+	</div>
+	<div class="prevent-draggable container-element editable-style section-element silex-id-1530586100557-9 page-electricity paged-element" data-silex-type="container">
+		<div class="editable-style container-element silex-element-content silex-container-content website-width prevent-draggable silex-id-1530586100557-10" data-silex-type="container">
+			<div class="editable-style text-element silex-id-1530586100557-11" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h1 style="text-align: center;"><font class="heading1" face="Roboto" size="7">Electricity</font></h1>
+				</div>
+			</div><a class="editable-style text-element silex-id-1530589520890-65 paged-element-hidden" data-silex-type="text" href="#!page-home" style="">
+			<div class="silex-element-content normal">
+				<h1 style="text-align: center;"><font face="Roboto" size="7">&lt;&lt;Home</font></h1>
+			</div></a>
+		</div>
+	</div>
+	<div class="editable-style container-element silex-id-1530586114603-12 page-electricity paged-element silex-just-added" data-silex-type="container" style="">
+		<div class="editable-style container-element silex-id-1530586114603-13" data-silex-type="container" style="">
+			<div class="editable-style html-element silex-id-1530586114603-14" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<select id="generatorSelect">
+						<option value="manual">
+							Manual Generator
+						</option>
+						<option value="coal">
+							Coal Generator
+						</option>
+						<option value="hydrogen">
+							Manual Generator
+						</option>
+						<option value="gas">
+							Natural Gas Generator
+						</option>
+						<option value="petroleum">
+							Petroleum Generator
+						</option>
+						<option value="steam">
+							Steam Generator
+						</option>
+						<option value="solar">
+							Solar Panel
+						</option>
+					</select>
+				</div>
+			</div>
+			<div class="editable-style text-element silex-id-1530586114603-15" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font class="heading3" face="Roboto">Select a generator:</font></h3>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530586114603-16" data-silex-type="container" style="">
+			<div class="editable-style html-element silex-id-1530586114603-17" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<input id="genQuantity" name="genQuantity" placeholder="1" style="left: 5px; width: 90px;" type="text">
+				</div>
+			</div>
+			<div class="editable-style text-element silex-id-1530586114603-18" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font face="Roboto">Input a quantity:</font></h3>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530586114603-19" data-silex-type="container" style="">
+			<div class="editable-style html-element silex-id-1530586114603-20" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<button onclick="calcEnergy();" type="button">Calculate Power Generated</button>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530586114604-21" data-silex-type="container" style="">
+			<div class="editable-style text-element silex-id-1530586114604-22" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font face="Roboto">Power Output:</font></h3>
+				</div>
+			</div>
+			<div class="editable-style html-element silex-id-1530586114604-23" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<h1 id="outPower"></h1>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530586114604-24" data-silex-type="container" style="">
+			<div class="editable-style text-element silex-id-1530586114604-25" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font face="Roboto">Inputs:</font></h3>
+				</div>
+			</div>
+			<div class="editable-style html-element silex-id-1530586114604-26" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<h1 id="genInputs"></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="prevent-draggable container-element editable-style section-element silex-id-1530586130403-28 page-home paged-element paged-element-hidden" data-silex-type="container">
+		<div class="editable-style container-element silex-element-content silex-container-content website-width prevent-draggable silex-id-1530586130404-29" data-silex-type="container">
+			<div class="editable-style text-element silex-id-1530586130404-30" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h1 style="text-align: center;"><font face="Roboto" size="7">Home</font></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="editable-style silex-id-1530586141219-31 container-element page-home paged-element" data-silex-type="container" style="">
+		<div class="editable-style silex-id-1530586186388-32 container-element" data-silex-type="container" style="">
+			<a class="editable-style text-element silex-id-1530586408498-35" data-silex-type="text" href="#!page-electricity" style="">
+			<div class="silex-element-content normal">
+				<h2 style="text-align: center;"><font class="heading2" face="Roboto" size="6">Electricity</font></h2>
+			</div></a>
+		</div>
+		<div class="editable-style container-element silex-id-1530586980287-37 paged-element-hidden" data-silex-type="container" style="">
+			<a class="editable-style text-element silex-id-1530586980287-38 page-link-active" data-silex-type="text" href="#!page-oxygen" style="">
+			<div class="silex-element-content normal">
+				<h2 style="text-align: center;"><font face="Roboto" size="6">Oxygen</font></h2>
+			</div></a>
+		</div>
+	</div>
+	<div class="editable-style silex-id-1530586873718-36 html-element page-home paged-element" data-silex-type="html" style="">
+		<div class="silex-element-content">
+			<hr>
+		</div>
+	</div>
+	<div class="prevent-draggable container-element editable-style section-element silex-just-added silex-id-1530587062062-45 page-oxygen paged-element" data-silex-type="container">
+		<div class="editable-style container-element silex-element-content silex-container-content website-width prevent-draggable silex-id-1530587062062-46" data-silex-type="container">
+			<div class="editable-style text-element silex-id-1530587062063-47" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h1 style="text-align: center;"><font face="Roboto" size="7">Oxygen</font></h1>
+				</div>
+			</div><a class="editable-style text-element silex-id-1530589604402-66 paged-element-hidden" data-silex-type="text" href="#!page-home" style="">
+			<div class="silex-element-content normal">
+				<h1 style="text-align: center;"><font face="Roboto" size="7">&lt;&lt;Home</font></h1>
+			</div></a>
+		</div>
+	</div>
+	<div class="editable-style container-element silex-id-1530587070541-48 page-oxygen paged-element paged-element-visible" data-silex-type="container" style="">
+		<div class="editable-style container-element silex-id-1530587070541-49" data-silex-type="container" style="">
+			<div class="editable-style html-element silex-id-1530587070541-50" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<select id="oxyGeneratorSelect">
+						<option value="deoxydizer">
+							Algae Deoxydizer
+						</option>
+						<option value="terrarium">
+							Algae Terrarium
+						</option>
+						<option value="deodorizer">
+							Deodorizer
+						</option>
+					</select>
+				</div>
+			</div>
+			<div class="editable-style text-element silex-id-1530587070542-51" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font class="heading3" face="Roboto">Select a generator:</font></h3>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530587070542-52" data-silex-type="container" style="">
+			<div class="editable-style html-element silex-id-1530587070542-53" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<input id="oxyGenQuantity" name="oxyGenQuantity" placeholder="1" style="left: 5px; width: 90px;" type="text">
+				</div>
+			</div>
+			<div class="editable-style text-element silex-id-1530587070543-54" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font face="Roboto">Input a quantity:</font></h3>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530587070543-55" data-silex-type="container" style="">
+			<div class="editable-style html-element silex-id-1530587070543-56" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<button onclick="calcOxygen();" type="button">Calculate Oxygen Generated</button>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530587070543-57" data-silex-type="container" style="">
+			<div class="editable-style text-element silex-id-1530587070543-58" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font face="Roboto">Outputs:</font></h3>
+				</div>
+			</div>
+			<div class="editable-style html-element silex-id-1530587070544-59" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<p id="oxyOut"></p>
+				</div>
+			</div>
+		</div>
+		<div class="editable-style container-element silex-id-1530587070544-60" data-silex-type="container" style="">
+			<div class="editable-style text-element silex-id-1530587070544-61" data-silex-type="text" style="">
+				<div class="silex-element-content normal">
+					<h3 style="text-align: center;"><font face="Roboto">Inputs:</font></h3>
+				</div>
+			</div>
+			<div class="editable-style html-element silex-id-1530587070545-62" data-silex-type="html" style="">
+				<div class="silex-element-content">
+					<p id="oxyGenInputs"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
